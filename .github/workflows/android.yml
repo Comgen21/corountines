@@ -24,9 +24,9 @@ jobs:
       run: chmod +x gradlew
     - name: Build with Gradle
       run: ./gradlew build
-   
-    if-no-files-found: warn
-    uses: actions/upload-artifact@v2.2.4
+    - name: Create Release with Debug APK
+      uses: underwindfall/create-release-with-debugapk@v2.0.0
+
   
 
 
